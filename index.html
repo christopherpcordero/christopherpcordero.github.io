@@ -1,17 +1,17 @@
 <html>
-
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+<head class="titlename" style="color: navy; white-space: pre">
     <title>Christopher Cordero</title>
-	<figure><img src="cordero.jpg" style="max-height: 500px; max-width: 500px; align-content: center; text-align: center; opacity: .9"></figure>
-    <figcaption style="font-size: 35px">Christopher Paul Cordero</figcaption>
+	<figure><img src="cordero.jpg" style="max-height: 50vw; max-width: 50vw; align-content: center; text-align: center; opacity: .9"></figure>
+    <figcaption style="font-size: 5vw">Christopher Paul Cordero</figcaption>
 	<figcaption>21</figcaption>
 	<figcaption>New Brunswick, NJ</figcaption>
 </head>
-
-<body>
-
-</body>
-    
+<body></body>
+<div class="menu">
+    </div>    
 <div class="content">
     <span style="font-size: 55px; font-family: cursive; text-align: center; align-content: center">Profile</span>
 
@@ -23,15 +23,13 @@ entering a field computer/cyber security.
 </div>
 
     
-<div class="experience"><span style="font-size: 45px; font-family: cursive; text-align: justify">Experience</span>
-    
+<div class="experience"><span style="font-size: 7vw; font-family: cursive; text-align: justify">Experience</span>
     <div class="date" style="text-align: left;">
     <b>HackRU</b>
         <i>May 2018 Volunteer</i>
         
-        -Participated in volunteer work to help hackers 
-        enter the event
-        -
+        -Participated in volunteer work to help hackers enter the event
+        
         
     
     </div>
@@ -49,7 +47,7 @@ entering a field computer/cyber security.
 </div> <i>Computer Science B.S.</i> 
     
     Pursuing Bachelors of Science Degree in Computer Science. 
-    Following a program track for computer secruity.
+    Following a program track for computer security.
     Courses:
     -Data Structures
     -Computer Architecture
@@ -100,11 +98,18 @@ November 2017 - President
     <div class="contacttitle">Contact</div>
     LinkedIn: <span></span>
     Twitter:  <span>@cordero____</span>
-    Instagram: <span>@co.rdero</span>
+    Instagram: <span onclick="url(https://www.instagram.com/co.rdero/?hl=en)">@co.rdero</span>
      <hr style="width: 25%; color: navy">
     </div>
 </html>
 <style>
+    .head{
+        color: navy;
+    }
+    
+    .titlename{
+        color: navy;
+    }
     .orgtitle{
         font-family: cursive;
         font-size: 45px;
@@ -120,9 +125,11 @@ November 2017 - President
         margin-right: 155px;
         border-bottom-style: solid;
         border-bottom-color: navy;
-        
+           color: navy;
 /*        color: skyblue;*/
         column-count: 2;
+        
+        white-space: pre-wrap;
         
     }
     .education{
@@ -138,6 +145,9 @@ November 2017 - President
 /*        color: navy;*/
         font-size: 20px;
         
+        white-space: pre-wrap;
+        text-shadow: 1px 1px navy;
+        
         
     }
     .desc{
@@ -146,7 +156,7 @@ November 2017 - President
 /*        float: right;*/
     }
     .experience{
-        font-size: 25px;
+        font-size: 2vw;
         padding: 30px;
 /*
         align-content: center;
@@ -154,7 +164,7 @@ November 2017 - President
 */
         column-count: 2;
      
-        
+           color: navy;
             
         border-right-style: double;
         border-right-color: navy;
@@ -166,6 +176,8 @@ November 2017 - President
         border-left-color: navy;
         border-left-width: thick;
         margin-left: 55px;
+        
+        white-space: pre-wrap;
     }
     .date{
 /*        left: 35px;*/
@@ -175,17 +187,20 @@ November 2017 - President
         background-color: darkgrey;
         padding: 55px;
 /*        margin: 15px;*/
+/*        margin-right: 25px;*/
         color: white;
         font-family: monospace;
-        font-size: 20px; 
-        white-space: pre;
+        font-size: 2vw; 
+        white-space: pre-wrap;
         text-shadow: 1px 1px navy;
-        text-align: center;
+        text-align: justify;
         
     }
     .contact{
         background-color:darkgrey;
         text-align: center;
+        white-space: pre;
+        color: navy
     }
     .contacttitle{
         text-shadow: 1px 1px navy;
@@ -207,13 +222,47 @@ November 2017 - President
         text-align: center;
         font-family: monospace;
     }
+
     body{
         color: navy;
         white-space: pre;
-/*        text-align: center;*/
+        text-align: center;
     }
     html{
         background-color: aliceblue;
     }
 
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+ .content {
+    width:100%;
+  }
 </style>
+
+<!--
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "letmein") {
+alert('You Got it Right!');
+window.open('cordero3.github.io');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>-->
